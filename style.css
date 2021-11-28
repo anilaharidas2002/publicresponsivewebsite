@@ -1,0 +1,25 @@
+.imgresize{
+    width:60px;
+    height: 60px;
+}
+body{
+    font-family: "National 2 Regular";
+}
+.set{
+    height:59px;
+    width:100%;
+}
+.first{
+    margin-top:78px;
+}
+.aligns{
+    margin-right:100px;
+}
+body{
+    overflow-x: hidden;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.dropdown-item:hover{
+    background-color: inherit !important;
+    color: inherit !important;
+}
