@@ -9,54 +9,115 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <div class="container-fluid">
-      <div class="p-4 w-100 d-flex">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="d-flex justify-content-between w-100">
-          <a class="navbar-brand left logosize m-auto" href="#"><img src="kfclogo.svg"></a>
-          <div class="collapse navbar-collapse justify-content-between">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Deals</a>
-              </li>
-            </ul>
-          </div>
-          <ul class="navbar-nav">
-            <div class="d-flex justify-content-even m-auto">
-              <li class="nav-item d-none d-lg-flex">
-                <a class="nav-link" href="#"><img src="signinlogo.svg"></a>
-                <a class="nav-link" href="#">Sign In</a>
-              </li>
-              <li class="nav-item m-auto">
-                <a class="navbar-brand alignsecond" href="#">&#8377 0</a>
-              </li>
-              <li class="nav-item m-auto">
-                <a class="navbar-brand" href="#">
-                  <img src="bucket_cart_icon.svg" style="width: 2rem;">
-                </a>
-              </li>
-            </div>
-          </ul>
-        </div>
-      </div>
+<style>
+.deskTopNav {
+   display:none;
+  }
+.mobileNav {
+   display:block;
+
+  }
+  .widthset{
+    margin-top: -10rem !important;
+  }
+
+  
+@media only screen and (min-width: 600px) {
+  .deskTopNav {
+   display:block;
+  }
+    .mobileNav {
+   display:none;
+  }
+  .imagewdth{
+    margin-top: 10rem !important;
+    width: 100%;
+  }
+  .navbar-brand{
+    height: 90px !important;
+  }
+
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="deskTopNav" style="height: 5px;">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="kfclogo.svg"></a>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Deals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="signinlogo.svg"><span>Sign In</span></a>
+        </li>
+      </ul>
+      <a class="navbar-brand pr-5" href="#">&#8377 0<span><img src="bucket_cart_icon.svg" width="50px"></span></a>
+      <a class="navbar-brand" href="#"><img src="bucket_cart_icon.svg"></a>
+  
+      </form>
     </div>
   </nav>
-  <div class="container-fluid bg-dark p-3 d-flex justify-content-center align-items-center" style="margin-top: 8rem;">
+
+</div>
+<div class="mobileNav">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="kfclogo.svg" class="pr-5"><span>&#8377 0</span><span><img width="120px" height="120px" src="bucket_cart_icon.svg"  style="padding-right:95px"></span></a>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Deals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="float=left;"><img src="signinlogo.svg"><span>Sign In</span></a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+
+  
+  </div>
+
+
+
+
+
+  <div class="container-fluid bg-dark p-3 d-flex justify-content-center align-items-center widthset">
     <h4 class="h4 text-white">LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h4>
     <button class="btn btn-danger" style="margin-left: 0.7rem; border-radius: 1rem;">Order Now</button>
   </div>
   <div class="col-md-12">
-    <img src="burgerimage.png" style="width: 100%;">
+    <img src="burgerimage.png" class="imagewdth img-fluid">
   </div>
   <section>
     <div class="container-fluid">
@@ -74,7 +135,7 @@
       <h3 class="mt-3 mb-3 font-weight:bold">BROWSE CATEGORIES</h3>
       <div class="row">
         <div class="col-md-3 col-6">
-          <div class="card" style="width: 14rem;">
+          <div class="card" style="width: 13rem;">
             <img src="bucket meals.jpg" class="card-img-top" alt="bucketmeals">
             <div class="card-body">
               <p class="card-text meals">BUCKET MEALS</p>
@@ -82,7 +143,7 @@
           </div>
         </div>
         <div class="col-md-3 col-6">
-          <div class="card" style="width: 14rem;">
+          <div class="card" style="width: 13rem;">
             <img src="trending.jpg" class="card-img-top" alt="bucketmeals">
             <div class="card-body">
               <p class="card-text meals">TRENDING</p>
@@ -90,7 +151,7 @@
           </div>
         </div>
         <div class="col-md-3 col-6">
-          <div class="card" style="width: 14rem;">
+          <div class="card" style="width: 13rem;">
             <img src="burgers.jpg" class="card-img-top" alt="bucketmeals">
             <div class="card-body">
               <p class="card-text meals">BURGERS</p>
@@ -98,7 +159,7 @@
           </div>
         </div>
         <div class="col-md-3 col-6">
-          <div class="card" style="width: 14rem;">
+          <div class="card" style="width: 13rem;">
             <img src="ricebowlz.jpg" class="card-img-top" alt="bucketmeals">
             <div class="card-body">
               <p class="card-text meals text-centre">RICE BOWLZ</p>
@@ -108,7 +169,7 @@
       </div>
       <div class="row mt-3">
         <div class="col-md-3 col-6">
-          <div class="card" style="width: 14rem;">
+          <div class="card" style="width: 13rem;">
             <img src="snacks.jpg" class="card-img-top" alt="bucketmeals">
             <div class="card-body">
               <p class="card-text meals">SNACKS</p>
@@ -116,7 +177,7 @@
           </div>
         </div>
         <div class="col-md-3 col-6">
-          <div class="card" style="width: 14rem;">
+          <div class="card" style="width: 13em;">
             <img src="beverages.jpg" class="card-img-top" alt="bucketmeals">
             <div class="card-body">
               <p class="card-text meals">BEVERAGES</p>
@@ -124,7 +185,7 @@
           </div>
         </div>
         <div class="col-md-3 col-6">
-          <div class="card" style="width:20rem; height:14rem;">
+          <div class="card" style="width:20rem; height:13rem;">
             <img class="card-img-top" src="finger_lickin.fc21c805.svg" alt="Card image cap">
             <div class="card-body">
               <a href="#" class="card-link" style="text-decoration:none; color:black">View All Menu
@@ -141,30 +202,26 @@
           <img src="kfclogo2.svg">
         </div>
       <div class="dropdown col-xl-2">
-        <button class="btn btn-secondary dropdown-toggle bg-transparent border-0" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-          KFC Food
-        </button>
-        <ul class="dropdown-menu dropdown-menu-dark show position-static bg-transparent border-0" aria-labelledby="dropdownMenuButton2">
+        
+        <ul class="dropdown-menu dropdown-menu-dark show position-static bg-transparent border-0 new" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item " href="" style="font-size: 20px; color:white; font-weight:bolder">KFC Foods</a></li>
           <li><a class="dropdown-item " href="#">Menu</a></li>
           <li><a class="dropdown-item" href="#">Order Lookup</a></li>
           <li><a class="dropdown-item" href="#">Gift Card</a></li>
         </ul>
       </div>
       <div class="dropdown col-xl-2">
-        <button class="btn btn-secondary dropdown-toggle bg-transparent border-0" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-        Support
-        </button>
-        <ul class="dropdown-menu dropdown-menu-dark show position-static bg-transparent border-0" aria-labelledby="dropdownMenuButton2">
+        <ul class="dropdown-menu dropdown-menu-dark show position-static bg-transparent border-0 " aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item " href="" style="font-size: 20px; color:white; font-weight:bolder">Support</a></li>
           <li><a class="dropdown-item " href="#">Get Help</a></li>
           <li><a class="dropdown-item" href="#">Contact Us</a></li>
           <li><a class="dropdown-item" href="#">KFC Feedback</a></li>
         </ul>
       </div>
       <div class="dropdown col-xl-2">
-        <button class="btn btn-secondary dropdown-toggle bg-transparent border-0" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-         Legal
-        </button>
+        
         <ul class="dropdown-menu dropdown-menu-dark show position-static bg-transparent border-0" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item " href="" style="font-size: 20px; color:white; font-weight:bolder">Legal</a></li>
           <li style="list-style: none;"><a class="dropdown-item" href="#">Terms and Conditions</a></li>
           <li style="list-style:none;"><a class="dropdown-item" href="#">Privacy Policy</a></li>
           <li style="list-style:none;"><a class="dropdown-item" href="#">Disclaimer</a></li>
